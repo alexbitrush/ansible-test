@@ -1,0 +1,13 @@
+- hosts: wordpress
+
+  vars_files:
+    - defaults/main.yml
+
+  remote_user: "{{ system_user }}"
+  become: yes
+  gather_facts: no
+  serial: 1
+
+  roles:
+  - docker
+  - wordpress

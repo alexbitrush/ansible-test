@@ -1,0 +1,7 @@
+---
+system_user: root
+compose_project_dir: /{{system_user}}/wordpress-ansible
+
+wp_db_name: wordpress
+wp_db_host: db
+wp_db_psw: change
